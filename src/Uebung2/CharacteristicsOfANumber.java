@@ -12,7 +12,7 @@ public class CharacteristicsOfANumber {
 
         int num = scanner.nextInt();
 
-        if (num%2 == 0) {
+        if (num%2 == 0) { //checks if number is even or odd by checking the remainder of the division by 2.
             System.out.printf("%d is an even number.%n", num);
         } else {
             System.out.printf("%d is an odd number.%n", num);
@@ -22,7 +22,7 @@ public class CharacteristicsOfANumber {
 
         int luckyNum = scanner.nextInt();
 
-        if (num == luckyNum) {
+        if (num == luckyNum) { //checks if num is the same as luckyNum
             System.out.printf("The number previously inserted is your lucky number: %d! %n", num);
         } else {
             System.out.printf("The number previously inserted is not your lucky number: %d! %n", num);

@@ -18,7 +18,7 @@ public class SimpleCalculations {
         System.out.printf("Modulo: %d mod %f = %f", firstNum, secondNum, modResult);
 
         /*printf is a formatted system print with placeholders. %d is a placeholder format for integers and long
-            %f is a placeholder for double*/
+            %f is a placeholder for double and float*/
 
     }
 
