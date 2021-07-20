@@ -13,9 +13,9 @@ public class CharacteristicsOfANumber {
         int num = scanner.nextInt();
 
         if (num%2 == 0) {
-            System.out.printf("%d is an even number. \n", num);
+            System.out.printf("%d is an even number.%n", num);
         } else {
-            System.out.printf("%d is an odd number. \n", num);
+            System.out.printf("%d is an odd number.%n", num);
         }
 
         System.out.println("Please insert your lucky number: ");
@@ -23,9 +23,9 @@ public class CharacteristicsOfANumber {
         int luckyNum = scanner.nextInt();
 
         if (num == luckyNum) {
-            System.out.printf("The number previously inserted is your lucky number: %d ! \n", num);
+            System.out.printf("The number previously inserted is your lucky number: %d! %n", num);
         } else {
-            System.out.printf("The number previously inserted is not your lucky number: %d ! \n", num);
+            System.out.printf("The number previously inserted is not your lucky number: %d! %n", num);
         }
 
     }
