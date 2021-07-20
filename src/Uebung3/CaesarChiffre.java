@@ -26,7 +26,9 @@ public class CaesarChiffre {
 
                 if (z > 90) {
                     z -= 26; // -26 to start again at A because there are 26 letters in the English alphabet
-                }
+                } /* else if (z < 65) { //only relevant for encrypting the message by using the same key in negative
+                    z += 26;
+                } */
 
                 indexChar = (char)z;
 
@@ -36,7 +38,9 @@ public class CaesarChiffre {
 
                 if (z > 122) {
                     z -= 26;
-                }
+                } /* else if (z < 97) {
+                    z += 26;
+                } */
 
                 indexChar = (char)z;
 
