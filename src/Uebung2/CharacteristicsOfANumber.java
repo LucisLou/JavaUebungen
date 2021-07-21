@@ -10,22 +10,28 @@ public class CharacteristicsOfANumber {
 
         System.out.println("Please insert a Number: ");
 
-        int num = scanner.nextInt();
+        float num = scanner.nextFloat();
+
+        if ((num/num) == 0) {
+            System.out.printf("%f is a round number%n", num);
+        } else {
+            System.out.printf("%f is not a round number%n", num);
+        }
 
         if (num%2 == 0) { //checks if number is even or odd by checking the remainder of the division by 2.
-            System.out.printf("%d is an even number.%n", num);
+            System.out.printf("%f is an even number.%n", num);
         } else {
-            System.out.printf("%d is an odd number.%n", num);
+            System.out.printf("%f is an odd number.%n", num);
         }
 
         System.out.println("Please insert your lucky number: ");
 
-        int luckyNum = scanner.nextInt();
+        float luckyNum = scanner.nextFloat();
 
         if (num == luckyNum) { //checks if num is the same as luckyNum
-            System.out.printf("The number previously inserted is your lucky number: %d! %n", num);
+            System.out.printf("The number previously inserted is your lucky number: %f! %n", num);
         } else {
-            System.out.printf("The number previously inserted is not your lucky number: %d! %n", num);
+            System.out.printf("The number previously inserted is not your lucky number: %f! %n", num);
         }
 
     }
