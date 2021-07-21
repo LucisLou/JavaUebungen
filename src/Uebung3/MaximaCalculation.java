@@ -18,7 +18,7 @@ public class MaximaCalculation {
 
         int inputNumberConvert;
 
-        while (!userInput.equals("q")) { // equals() instead of == for Strings
+        while (!userInput.equals("q")) { // !equals() instead of != for Strings
             userInput = scanner.nextLine();
 
             if (!userInput.equals("q")) {
