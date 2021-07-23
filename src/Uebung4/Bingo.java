@@ -12,17 +12,16 @@ public class Bingo {
 
 
         int column [][] = {
-                {0, 0, 0, 0, 0}, //i = 0
-                {0, 0, 0, 0, 0}, //i = 1
-                {0, 0, 0, 0, 0}, //i = 2
-                {0, 0, 0, 0, 0}, //i = 3
-                {0, 0, 0, 0, 0} // i = 4
-           //j = 0  1  2  3  4
+                {0, 0, 0, 0, 0},
+                {0, 0, 0, 0, 0},
+                {0, 0, 0, 0, 0},
+                {0, 0, 0, 0, 0},
+                {0, 0, 0, 0, 0}
         };
 
         for (int i = 0; i <= column.length; i++) {
             for (int j = 0; j < column.length; j++) {
-                if (i < 1) { //because you can't multiply by 0, a separate random generation is made since we need to calculate the min-max with a multiplication of 15*i for the bingo card
+                if (i < 1) { //because you can't multiply by 0 (unless you always want 0), a separate random generation is made since we need to calculate the min-max with a multiplication of 15*i for the bingo card
                     column[j][i] = 1 + random.nextInt(15 - (1 + 1));
                     for (int k = 0; k < j; k++) {
                         if (column[j][i] == column[k][i]) {
