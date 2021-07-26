@@ -18,7 +18,7 @@ I learned the formatted print printf, the new switch, and the try-catch statemen
 
 ## Week 2
 
-In the second week I learned all sorting algorithms and started the 3rd week of Java, learning how to use methods.
+In the second week I learned the concept of sorting algorithms and started the 3rd week of Java, learning how to use methods.
 
 Most notable for me so far is Divide and Conquer with mergeSort, which I spent all day researching and implementing myself.
 
