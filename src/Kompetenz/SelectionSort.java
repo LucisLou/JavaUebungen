@@ -17,27 +17,27 @@ public class SelectionSort {
         printArray(array);
     }
 
-    public static int[] selectionSort(int[] array) {
+    public static int[] selectionSort(int[] sortedArray) {
 
         int tempSave = 0; //initializing a temporary (helper) integer which will be used during swapping by getting the value of the bigger number so that the bigger number doesn't get lost
 
-        for (int i = 0; i < array.length; i++) {
+        for (int i = 0; i < sortedArray.length; i++) {
 
-            for (int j = i+1; j < array.length; j++) {
+            for (int j = i+1; j < sortedArray.length; j++) {
 
-                if (array[j] < array[i]) {
-                    tempSave = array[i];
-                    array[i] = array[j];
-                    array[j] = tempSave;
+                if (sortedArray[j] < sortedArray[i]) {
+                    tempSave = sortedArray[i];
+                    sortedArray[i] = sortedArray[j];
+                    sortedArray[j] = tempSave;
                 }
                 /*
-                array[j] is bigger than array[i], then the value of array[i] will be temporarily saved in tempSave and then array[i] gets the value of array[j]
-                and array[j] will get the value of tempSave. This is done to swap the smaller value with the bigger value.
+                sortedArray[j] is bigger than sortedArray[i], then the value of sortedArray[i] will be temporarily saved in tempSave and then sortedArray[i] gets the value of sortedArray[j]
+                and sortedArray[j] will get the value of tempSave. This is done to swap the smaller value with the bigger value.
                  */
             }
         }
 
-        return array;
+        return sortedArray;
 
     }
 
