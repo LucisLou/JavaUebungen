@@ -13,7 +13,7 @@ public class CaesarChiffre {
         System.out.println("Give in your text to encrypt in English:");
 
         String text = scanner.nextLine();
-        int key = random.nextInt((25 - 1) +1) + 1; //generate a random number between 1 and 26 using random.nextInt((max - min) + 1) + min;
+        int key = -20; //random.nextInt((25 - 1) +1) + 1; //generate a random number between 1 and 26 using random.nextInt((max - min) + 1) + min;
         String encryptedText = "";
 
         for (int i = 0; i < text.length(); i++) {
@@ -26,9 +26,9 @@ public class CaesarChiffre {
 
                 if (z > 90) {
                     z -= 26; // -26 to start again at A because there are 26 letters in the English alphabet
-                } /* else if (z < 65) { //only relevant for encrypting the message by using the same key in negative
+                }  else if (z < 65) { //only relevant for encrypting the message by using the same key in negative
                     z += 26;
-                } */
+                }
 
                 indexChar = (char)z;
 
@@ -38,9 +38,9 @@ public class CaesarChiffre {
 
                 if (z > 122) {
                     z -= 26;
-                } /* else if (z < 97) {
+                }  else if (z < 97) {
                     z += 26;
-                } */
+                }
 
                 indexChar = (char)z;
 

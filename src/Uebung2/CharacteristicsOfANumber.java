@@ -12,7 +12,7 @@ public class CharacteristicsOfANumber {
 
         float num = scanner.nextFloat();
 
-        if ((num/num) == 0) {
+        if ((num%10) == 0) {
             System.out.printf("%f is a round number%n", num);
         } else {
             System.out.printf("%f is not a round number%n", num);
