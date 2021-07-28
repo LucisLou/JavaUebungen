@@ -19,6 +19,15 @@ public class Bingo {
                 {0, 0, 0, 0, 0}
         };
 
+        for (int i = 0; i < bingo.length; i++) {
+            System.out.print(" " + bingo[i] + "  ");
+            if (i < bingo.length - 1) { // will only print the | divider until G
+                System.out.print("|");
+            }
+        }
+
+        System.out.println(); //line break after BINGO has been printed out
+
         for (int i = 0; i <= column.length; i++) {
             for (int j = 0; j < column.length; j++) {
                 if (i < 1) { //because you can't multiply by 0 (unless you always want 0), a separate random generation is made since we need to calculate the min-max with a multiplication of 15*i for the bingo card
@@ -45,15 +54,6 @@ public class Bingo {
                 }
             }
         }
-
-        for (int i = 0; i < bingo.length; i++) {
-            System.out.print(" " + bingo[i] + "  ");
-            if (i < bingo.length - 1) { // will only print the | divider until G
-                System.out.print("|");
-            }
-        }
-
-        System.out.println(); //line break after BINGO has been printed out
 
         for (int i = 0; i < column.length; i++) { //prints out all the values of column
             for (int j = 0; j < column.length; j++) {

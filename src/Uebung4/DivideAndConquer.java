@@ -18,7 +18,7 @@ public class DivideAndConquer {
             System.out.print(array[i] + " ");
         }
 
-        System.out.println();  //used for a break
+        System.out.println();  //used for a break for visually better console output
 
         array = mergeSort(array); //calls mergeSort using the values of array
 
