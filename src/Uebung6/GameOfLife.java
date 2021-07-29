@@ -10,16 +10,34 @@ public class GameOfLife {
 
         int[][] field = new int[10][10];
 
+        /*
+        int[][] field = new int[][] {
+                {1, 0, 1, 1, 0, 0, 1, 0, 1, 1},
+                {0, 1, 0, 0, 1, 1, 1, 0, 0, 0},
+                {0, 0, 0, 0, 1, 0, 1, 0, 1, 0},
+                {1, 0, 0, 0, 1, 1, 0, 0, 1, 0},
+                {1, 1, 1, 1, 0, 0, 1, 0, 1, 1},
+                {1, 0, 1, 1, 0, 0, 1, 0, 1, 1},
+                {0, 1, 0, 0, 1, 1, 1, 0, 0, 0},
+                {0, 0, 0, 0, 1, 0, 1, 0, 1, 0},
+                {1, 0, 0, 0, 1, 1, 0, 0, 1, 0},
+                {1, 1, 1, 1, 0, 0, 1, 0, 1, 1}
+                };
+        */
+
         for (int i = 0; i < field.length; i++) { //generates 1 or 0 to indexes of the array randomly
             for (int j = 0; j < field.length; j++) {
                 field[i][j] = random.nextInt(1 + 1 - 0); //min 0, max 1; 1 is alive, 0 is dead
             }
         }
 
+
         System.out.println("Original field");
         printArray(field);
 
-        for (int i = 0; i < 10; i ++) { //for every loop, a new generation will be generated and printed out
+        int generationRuns = 10;
+
+        for (int i = 0; i < generationRuns; i ++) { //for every loop, a new generation will be generated and printed out
 
             field = newGeneration(field);
 
@@ -44,7 +62,9 @@ public class GameOfLife {
 
                 if (aliveNeighbor < 2) {
                     newGen[i][j] = 0;
-                } else if (aliveNeighbor >= 2 && aliveNeighbor <=3) {
+                } else if (aliveNeighbor >= 2 && aliveNeighbor <=3 && newGen[i][j] == 1) {
+                    newGen[i][j] = 1;
+                } else if (aliveNeighbor == 3 && newGen[i][j] == 0){
                     newGen[i][j] = 1;
                 } else if (aliveNeighbor >= 4) {
                     newGen[i][j] = 0;
@@ -52,7 +72,6 @@ public class GameOfLife {
                 //if there's less than 2 alive neighbors, or if there's more than 3 neighbors, the cell will die
                 /*
                 if there's 2 to 3 neighbors, the cell is alive, if the cell has exactly 3 neighbors, it is born,
-                but since these two are within the same range to make the cell have the value of 1, it can be merged into one condition
                 */
 
             }
