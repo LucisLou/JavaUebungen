@@ -16,10 +16,24 @@ Following java programs have been created:
 
 I learned the formatted print printf, the new switch, and the try-catch statements.
 
+
+
 ## Week 2
 
-In the second week I learned the concept of sorting algorithms and started the 3rd week of Java, learning how to use methods.
+In the second week I learned the concept of sorting algorithms and started the 3rd week of Java, learning how to use methods more in-depth than I already did.
 
-Most notable for me so far is Divide and Conquer with mergeSort, which I spent all day researching and implementing myself.
+Most notable for me at the start of the week was Divide and Conquer with mergeSort, which I spent an entire day researching and implementing myself:
 
 * ![GitHub](https://github.com/LucisLou/JavaUebungen/blob/main/src/Uebung4/DivideAndConquer.java) Format: ![Divide and Conquer (mergeSort)](url)
+
+After completing the competence check for Methods, I continued to work on the tasks for data structures:
+
+* ![GitHub](https://github.com/LucisLou/JavaUebungen/tree/main/src/Uebung7) Format: ![Tasks of data structures](url)
+
+Finally, I started working on the tasks for unit testing, creating a Tic Tac Toe game against the PC (no AI, PC move is random) and started using JUnit Jupiter for testing programs.
+
+* ![GitHub](https://github.com/LucisLou/JavaUebungen/blob/main/src/Uebung8/TicTacToe.java) Format: ![Tic Tac Toe](url)
+
+#### What I've learned that was new to me
+
+I learned how to implement sorting algorithms and how to test programs properly via unit testing.
