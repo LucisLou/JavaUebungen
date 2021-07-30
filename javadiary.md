@@ -9,7 +9,7 @@ Following java programs have been created:
 * ![GitHub](https://github.com/LucisLou/JavaUebungen/tree/main/src/Uebung1) Folder: ![Tasks of Day 1](url) 
 * ![GitHub](https://github.com/LucisLou/JavaUebungen/tree/main/src/Uebung2) Folder: ![Tasks of Day 2](url) 
 * ![GitHub](https://github.com/LucisLou/JavaUebungen/tree/main/src/Uebung3) Folder: ![Tasks of Day 3](url)
-* ![GitHub](https://github.com/LucisLou/JavaUebungen/blob/main/src/Kompetenz/Leetspeak.java) Java file: ![Competence check Week 1 - Leet speak](url)
+* ![GitHub](https://github.com/LucisLou/JavaUebungen/blob/main/src/Kompetenz/Leetspeak.java) Java File: ![Competence check Week 1 - Leet speak](url)
 * ![GitHub](https://github.com/LucisLou/JavaUebungen/blob/main/src/Uebung4/Bingo.java) Java File: ![Bingo](url) 
 
 #### What I've learned that was new to me
