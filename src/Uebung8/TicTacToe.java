@@ -106,7 +106,7 @@ public class TicTacToe {
 
         }
 
-        tttField[x][y] = 'O';
+        tttField[x][y] = 'O'; //puts an O on a spot if it's free
 
         return tttField;
 
@@ -124,59 +124,71 @@ public class TicTacToe {
 
         }
 
-        tttField[x][y] = 'X';
+        tttField[x][y] = 'X'; //puts a X on a spot if it's free
 
         return tttField;
 
     }
 
     public static boolean checkWinPlayer(char[][] tttField) {
+        //checks if any of the win conditions for the player are met
 
         boolean win = false;
+        int isO = 0; //used to see if 3 O in the positions that together would make a win for the player exist or not
 
-        if (tttField[0][0] == 'O' && tttField[1][0] == 'O' && tttField[2][0] == 'O') {
-            win = true;
-        } else if (tttField[0][1] == 'O' && tttField[1][1] == 'O' && tttField[2][1] == 'O') {
-            win = true;
-        } else if (tttField[0][2] == 'O' && tttField[1][2] == 'O' && tttField[2][2] == 'O') {
-            win = true;
-        } else if (tttField[0][0] == 'O' && tttField[1][1] == 'O' && tttField[2][2] == 'O') {
-            win = true;
-        } else if (tttField[0][2] == 'O' && tttField[1][1] == 'O' && tttField[2][0] == 'O') {
-            win = true;
-        } else if (tttField[0][0] == 'O' && tttField[0][1] == 'O' && tttField[0][2] == 'O') {
-            win = true;
-        } else if (tttField[1][0] == 'O' && tttField[1][1] == 'O' && tttField[1][2] == 'O') {
-            win = true;
-        } else if (tttField[2][0] == 'O' && tttField[2][1] == 'O' && tttField[2][2] == 'O') {
+        for (int i = 0; i < tttField.length; i++) {
+            isO = 0;
+
+            for (int j = 0; j < tttField.length; j++) {
+
+                if (tttField[i][j] == 'O' || tttField[j][i] == 'O') {
+                    isO += 1;
+                }
+
+                if (isO == 3) {
+                    win = true;
+                }
+
+            }
+
+        }
+
+        if (tttField[0][2] == 'O' && tttField[1][1] == 'O' && tttField[2][0] == 'O') {
             win = true;
         }
+        //checks if a diagonal win is present, since the win at the diagonal from left to right is already covered, only right to left needs to be checked
 
         return win;
 
     }
 
     public static boolean checkWinCP(char[][] tttField) {
+        //checks if any of the win conditions for the PC are met
 
         boolean win = false;
+        int isX = 0; //used to see if 3 X in the positions that together would make a win for PC exist or not
 
-        if (tttField[0][0] == 'X' && tttField[1][0] == 'X' && tttField[2][0] == 'X') {
-            win = true;
-        } else if (tttField[0][1] == 'X' && tttField[1][1] == 'X' && tttField[2][1] == 'X') {
-            win = true;
-        } else if (tttField[0][2] == 'X' && tttField[1][2] == 'X' && tttField[2][2] == 'X') {
-            win = true;
-        } else if (tttField[0][0] == 'X' && tttField[1][1] == 'X' && tttField[2][2] == 'X') {
-            win = true;
-        } else if (tttField[0][2] == 'X' && tttField[1][1] == 'X' && tttField[2][0] == 'X') {
-            win = true;
-        } else if (tttField[0][0] == 'X' && tttField[0][1] == 'X' && tttField[0][2] == 'X') {
-            win = true;
-        } else if (tttField[1][0] == 'X' && tttField[1][1] == 'X' && tttField[1][2] == 'X') {
-            win = true;
-        } else if (tttField[2][0] == 'X' && tttField[2][1] == 'X' && tttField[2][2] == 'X') {
+        for (int i = 0; i < tttField.length; i++) {
+            isX = 0;
+
+            for (int j = 0; j < tttField.length; j++) {
+
+                if (tttField[i][j] == 'X' || tttField[j][i] == 'X') {
+                    isX += 1;
+                }
+
+                if (isX == 3) {
+                    win = true;
+                }
+
+            }
+
+        }
+
+        if (tttField[0][2] == 'X' && tttField[1][1] == 'X' && tttField[2][0] == 'X') {
             win = true;
         }
+        //checks if a diagonal win is present, since the win at the diagonal from left to right is already covered, only right to left needs to be checked
 
         return win;
 
