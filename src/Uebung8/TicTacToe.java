@@ -156,7 +156,7 @@ public class TicTacToe {
         if (tttField[0][2] == 'O' && tttField[1][1] == 'O' && tttField[2][0] == 'O') {
             win = true;
         }
-        //checks if a diagonal win is present, since the win at the diagonal from left to right is already covered, only right to left needs to be checked
+        //checks if a diagonal win is present, since the win at the diagonal from left to right is already covered in the for-loop, only right to left needs to be checked
 
         return win;
 
@@ -169,7 +169,7 @@ public class TicTacToe {
         int isX = 0; //used to see if 3 X in the positions that together would make a win for PC exist or not
 
         for (int i = 0; i < tttField.length; i++) {
-            isX = 0;
+            isX = 0; //resets to 0 ever for-loop of i
 
             for (int j = 0; j < tttField.length; j++) {
 
@@ -195,6 +195,8 @@ public class TicTacToe {
     }
 
     public static void printField(char[][] tttField) {
+        //used to print out the game field
+
 
         for (int i = 0; i < tttField.length; i++) {
 
