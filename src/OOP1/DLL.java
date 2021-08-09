@@ -91,7 +91,6 @@ public class DLL {
             ListElement current = start;
 
             while (current.next != null) {
-                System.out.println(current.equals(value));
                 if (current.equals(value)) {
 
                     current.prev.next = current.next;
