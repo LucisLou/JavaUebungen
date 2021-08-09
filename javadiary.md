@@ -37,3 +37,15 @@ Finally, I started working on the tasks for unit testing, creating a Tic Tac Toe
 #### What I've learned that was new to me
 
 I learned how to implement sorting algorithms and how to test programs properly via unit testing.
+
+## Week 3 
+
+In the third week I started learning about Object Oriented Programming.
+
+As I only had 2 1/2 days to work on the competence due to taking 2 days off for my move, I spent the entirety of my time to the doubly linked list of OOP1.
+
+* ![Doubly Linked List](https://github.com/LucisLou/JavaUebungen/blob/main/src/OOP1/DLL.java)
+
+#### What I've learned that was new to me
+
+I learned the basics of OOP, how to generate toString() and equals() with IntelliJ.
