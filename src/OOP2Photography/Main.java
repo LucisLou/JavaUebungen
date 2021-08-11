@@ -21,6 +21,7 @@ public class Main {
 
         Lens lensFail = new Lens(50,0);
         //making a lens with a bigger minimum focal length on purpose to see the check
+        System.out.println(lensFail);
     }
 
 }
