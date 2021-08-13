@@ -1,0 +1,5 @@
+USER_ID,Name,Address str.,ZIP
+1,Trevor B.,Imaginary str. 12,1112
+2,Miriam A.,Wonder str. 69,1337
+3,August D.,Aragon Mem. str. 2,3030
+4,Blobton S.,Slimy str. 1,6969
