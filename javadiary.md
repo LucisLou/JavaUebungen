@@ -40,7 +40,7 @@ I learned how to implement sorting algorithms and how to test programs properly 
 
 ## Week 3 
 
-In the third week I started learning about Object Oriented Programming.
+In the third week I started learning about Object-Oriented Programming.
 
 As I only had 2 1/2 days to work on the competence due to taking 2 days off for my move, I spent the entirety of my time to the doubly linked list of OOP1.
 
@@ -49,3 +49,18 @@ As I only had 2 1/2 days to work on the competence due to taking 2 days off for 
 #### What I've learned that was new to me
 
 I learned the basics of OOP, how to generate toString() and equals() with IntelliJ.
+
+
+## Week 4
+
+In the fourth week I continued with OOP, doing the tasks of OOP2. After finishing those tasks I continued teaching myself inheritance, exceptions, and file IO.
+
+* ![Tasks of OOP2 - Part 1](https://github.com/LucisLou/JavaUebungen/tree/main/src/OOP2)
+* ![Tasks of OOP2 - Part 2 - Photography](https://github.com/LucisLou/JavaUebungen/tree/main/src/OOP2Photography)
+* ![Task of Exceptions](https://github.com/LucisLou/JavaUebungen/tree/main/src/Exceptions)
+* ![Task of File IO - UserManagement](https://github.com/LucisLou/JavaUebungen/tree/main/src/UserManagementFile)
+
+##### What I've learned that is new to me
+
+I had never worked with external files before, so I learned a lot about how to read files in different way and how to write/overwrite them.
+I also learned about creating my own exceptions and throwing them in my programs.
