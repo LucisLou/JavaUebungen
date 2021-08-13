@@ -28,7 +28,6 @@ public class FreeTimeOrWorkTime {
                 yield "It's not work time! Hooray!";
             default:
                 yield "invalid";
-                //throw new IllegalStateException("Unexpected value: " + time);
         }; //Because this is a statement, it's ended with a semi-colon
 
         System.out.printf("It's %d o'clock! Which means: %s", time, isWorkTime);

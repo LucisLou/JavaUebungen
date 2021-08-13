@@ -68,7 +68,6 @@ public class UserManagement {
             //writes modifiedText into userFile
 
 
-
         } catch (IOException e) {
 
             System.out.println("File not found or another exception happened.");
