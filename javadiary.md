@@ -64,4 +64,4 @@ In the fourth week I continued with OOP, doing the tasks of OOP2. After finishin
 
 I had never worked with external files before, so I learned a lot about how to read files in different way and how to write/overwrite them.
 I also learned about creating my own exceptions and throwing them in my programs.
-Along with file IO, I learned how to better make new String with StringBuilder.
+Along with file IO, I learned how to better make new Strings that will have lines added to in a loop with StringBuilder.
