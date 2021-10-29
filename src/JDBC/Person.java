@@ -4,13 +4,11 @@ public class Person {
 
     private String fname;
     private String lname;
-
     public enum Gender {
         MALE,
         FEMALE,
         OTHER
     }
-
     private Gender gender;
     private String birthday;
 
@@ -46,15 +44,34 @@ public class Person {
         this.birthday = birthday;
     }
 
-    public Person(String fname, String lname) {
-        this.fname = fname;
-        this.lname = lname;
+    @Override
+    public String toString() {
+
+        return fname + "," + lname + "," + gender + "," + birthday;
+
+        /* return "Person{" +
+                "fname='" + fname + '\'' +
+                ", lname='" + lname + '\'' +
+                ", gender=" + gender +
+                ", birthday='" + birthday + '\'' +
+                '}'; */
     }
 
-    public Person(String fname, String lname, Gender gender, String birthday) {
+    public Person(String fname, String lname, char chosenGender, String birthday) {
         this.fname = fname;
         this.lname = lname;
-        this.gender = gender;
         this.birthday = birthday;
+
+        switch (Character.toLowerCase(chosenGender)) {
+            case 'f':
+                this.gender = Gender.FEMALE;
+                break;
+            case 'm':
+                this.gender = Gender.MALE;
+                break;
+            case 'o':
+                this.gender = Gender.OTHER;
+                break;
+        }
     }
 }
